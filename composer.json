@@ -1,0 +1,19 @@
+{
+    "name": "user/composer-version",
+    "description": "Add npm-like version commands to composer",
+    "type": "composer-plugin",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ComposerVersionPlugin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test": "test/"
+        }
+    }
+}
