@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5030946-e42a-4f7b-8ddc-a6a0cdabe2f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/composer-version.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+    <list default="true" id="a5030946-e42a-4f7b-8ddc-a6a0cdabe2f2" name="Default Changelist" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GitStorage/GitStorage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StorageInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Version.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VersionManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Feature/VersionManagerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Mock/InMemoryVersionStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +28,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
   <component name="ProjectId" id="1YJaU1mI8GP8HZgLgjQ0Zzd2JJT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,8 +43,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
+  </component>
+  <component name="RunManager">
+    <configuration name="VersionManagerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test\Feature\VersionManagerTest" file="$PROJECT_DIR$/test/Feature/VersionManagerTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.VersionManagerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,17 +75,119 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582663162543</updated>
-      <workItem from="1582663163724" duration="336000" />
+      <workItem from="1582663163724" duration="3868000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1582663509411</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582663509411</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="BRANCHES_LOG">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="469" y="151" key="SettingsEditor" timestamp="1582663388463">
+    <state x="548" y="175" key="#CLI_Interpreters" timestamp="1582666192727">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state x="469" y="151" key="SettingsEditor/0.23.1920.979@0.23.1920.979" timestamp="1582663388463" />
+    <state x="548" y="175" key="#CLI_Interpreters/0.23.1920.979@0.23.1920.979" timestamp="1582666192727" />
+    <state x="636" y="98" key="#PHP" timestamp="1582664678667">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="636" y="98" key="#PHP/0.23.1920.979@0.23.1920.979" timestamp="1582664678667" />
+    <state x="548" y="174" key="#Test_Frameworks" timestamp="1582664733311">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="548" y="174" key="#Test_Frameworks/0.23.1920.979@0.23.1920.979" timestamp="1582664733311" />
+    <state x="619" y="142" width="725" height="741" key="#VersionManagerTest" timestamp="1582664686098">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="619" y="142" width="725" height="741" key="#VersionManagerTest/0.23.1920.979@0.23.1920.979" timestamp="1582664686098" />
+    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1582666579674">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser/0.23.1920.979@0.23.1920.979" timestamp="1582666579674" />
+    <state x="722" y="76" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582666500221">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="722" y="76" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.979@0.23.1920.979" timestamp="1582666500221" />
+    <state x="722" y="432" key="ComposerInitDialogKey" timestamp="1582666528764">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="722" y="432" key="ComposerInitDialogKey/0.23.1920.979@0.23.1920.979" timestamp="1582666528764" />
+    <state width="1878" height="264" key="GridCell.Tab.0.bottom" timestamp="1582666522961">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.bottom/0.23.1920.979@0.23.1920.979" timestamp="1582666522961" />
+    <state width="1878" height="264" key="GridCell.Tab.0.center" timestamp="1582666522960">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.center/0.23.1920.979@0.23.1920.979" timestamp="1582666522960" />
+    <state width="1878" height="264" key="GridCell.Tab.0.left" timestamp="1582666522960">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.left/0.23.1920.979@0.23.1920.979" timestamp="1582666522960" />
+    <state width="1878" height="264" key="GridCell.Tab.0.right" timestamp="1582666522960">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.right/0.23.1920.979@0.23.1920.979" timestamp="1582666522960" />
+    <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1582666381818">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.bottom/0.23.1920.979@0.23.1920.979" timestamp="1582666381818" />
+    <state width="1878" height="326" key="GridCell.Tab.1.center" timestamp="1582666381817">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.center/0.23.1920.979@0.23.1920.979" timestamp="1582666381817" />
+    <state width="1878" height="326" key="GridCell.Tab.1.left" timestamp="1582666381817">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.left/0.23.1920.979@0.23.1920.979" timestamp="1582666381817" />
+    <state width="1878" height="326" key="GridCell.Tab.1.right" timestamp="1582666381818">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.right/0.23.1920.979@0.23.1920.979" timestamp="1582666381818" />
+    <state x="548" y="262" key="IDE.errors.dialog" timestamp="1582664700989">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="548" y="262" key="IDE.errors.dialog/0.23.1920.979@0.23.1920.979" timestamp="1582664700989" />
+    <state x="670" y="319" key="NewPhpClassDialog" timestamp="1582666476753">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="670" y="319" key="NewPhpClassDialog/0.23.1920.979@0.23.1920.979" timestamp="1582666476753" />
+    <state x="469" y="151" key="SettingsEditor" timestamp="1582666320231">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="469" y="151" key="SettingsEditor/0.23.1920.979@0.23.1920.979" timestamp="1582666320231" />
+    <state x="0" y="23" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1582665009950">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="0" y="23" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.23.1920.979@0.23.1920.979" timestamp="1582665009950" />
+    <state x="625" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1582666667956">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="625" y="238" width="670" height="676" key="search.everywhere.popup/0.23.1920.979@0.23.1920.979" timestamp="1582666667956" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/composer_version@VersionManagerTest.xml" NAME="VersionManagerTest Coverage Results" MODIFIED="1582666381788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
