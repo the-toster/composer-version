@@ -1,4 +1,5 @@
 <?php
+
 namespace ComposerVersionPlugin;
 
 class Version
@@ -18,12 +19,19 @@ class Version
         return implode('.', [$this->major, $this->minor, $this->patch]);
     }
 
-    public function bump(): void
+    public function major(): void
     {
         $this->major++;
         $this->minor = 0;
         $this->patch = 0;
     }
+
+    public function minor(): void
+    {
+        $this->minor++;
+        $this->patch = 0;
+    }
+
 
     public function patch(): void
     {
