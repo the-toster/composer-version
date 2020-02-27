@@ -10,15 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5030946-e42a-4f7b-8ddc-a6a0cdabe2f2" name="Default Changelist" comment="add basic model methods, add storage methods: isAccessible, has">
-      <change afterPath="$PROJECT_DIR$/src/GitStorage/ExecInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GitStorage/Shell.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Mock/Shell.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Unit/GitStorageTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/composer-version.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/composer-version.iml" afterDir="false" />
+    <list default="true" id="a5030946-e42a-4f7b-8ddc-a6a0cdabe2f2" name="Default Changelist" comment="add some storage tests">
+      <change afterPath="$PROJECT_DIR$/src/Plugin/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Plugin/Plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entrypoint.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GitStorage/GitStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GitStorage/GitStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StorageUnaccessible.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageInaccessible.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VersionManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +68,18 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YJaU1mI8GP8HZgLgjQ0Zzd2JJT" />
@@ -122,7 +133,9 @@
       <updated>1582663162543</updated>
       <workItem from="1582663163724" duration="4084000" />
       <workItem from="1582747745403" duration="3071000" />
-      <workItem from="1582831823939" duration="2242000" />
+      <workItem from="1582831823939" duration="2848000" />
+      <workItem from="1582835381354" duration="4000" />
+      <workItem from="1582835798366" duration="2621000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1582663509411</created>
@@ -145,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582750926425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add some storage tests">
+      <created>1582834445401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582834445401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,12 +181,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="basic interface staging commit" />
     <MESSAGE value="add basic model methods, add storage methods: isAccessible, has" />
-    <option name="LAST_COMMIT_MESSAGE" value="add basic model methods, add storage methods: isAccessible, has" />
+    <MESSAGE value="add some storage tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some storage tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="548" y="175" key="#CLI_Interpreters" timestamp="1582666192727">
@@ -185,38 +207,38 @@
       <screen x="0" y="23" width="1920" height="979" />
     </state>
     <state x="619" y="142" width="725" height="741" key="#VersionManagerTest/0.23.1920.979@0.23.1920.979" timestamp="1582664686098" />
-    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1582833470026">
+    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1582836004296">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser/0.23.1920.979@0.23.1920.979" timestamp="1582833470026" />
-    <state x="648" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582748524506">
+    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser/0.23.1920.979@0.23.1920.979" timestamp="1582836004296" />
+    <state x="648" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582834976226">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state x="648" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.979@0.23.1920.979" timestamp="1582748524506" />
-    <state x="722" y="76" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582666500221">
+    <state x="648" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.979@0.23.1920.979" timestamp="1582834976226" />
+    <state x="722" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582836366985">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state x="722" y="76" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.979@0.23.1920.979" timestamp="1582666500221" />
+    <state x="722" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.979@0.23.1920.979" timestamp="1582836366984" />
     <state x="722" y="432" key="ComposerInitDialogKey" timestamp="1582666528764">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
     <state x="722" y="432" key="ComposerInitDialogKey/0.23.1920.979@0.23.1920.979" timestamp="1582666528764" />
-    <state width="1878" height="264" key="GridCell.Tab.0.bottom" timestamp="1582834414290">
+    <state width="1878" height="264" key="GridCell.Tab.0.bottom" timestamp="1582835018952">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.bottom/0.23.1920.979@0.23.1920.979" timestamp="1582834414290" />
-    <state width="1878" height="264" key="GridCell.Tab.0.center" timestamp="1582834414289">
+    <state width="1878" height="264" key="GridCell.Tab.0.bottom/0.23.1920.979@0.23.1920.979" timestamp="1582835018952" />
+    <state width="1878" height="264" key="GridCell.Tab.0.center" timestamp="1582835018951">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.center/0.23.1920.979@0.23.1920.979" timestamp="1582834414289" />
-    <state width="1878" height="264" key="GridCell.Tab.0.left" timestamp="1582834414289">
+    <state width="1878" height="264" key="GridCell.Tab.0.center/0.23.1920.979@0.23.1920.979" timestamp="1582835018951" />
+    <state width="1878" height="264" key="GridCell.Tab.0.left" timestamp="1582835018950">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.left/0.23.1920.979@0.23.1920.979" timestamp="1582834414289" />
-    <state width="1878" height="264" key="GridCell.Tab.0.right" timestamp="1582834414289">
+    <state width="1878" height="264" key="GridCell.Tab.0.left/0.23.1920.979@0.23.1920.979" timestamp="1582835018950" />
+    <state width="1878" height="264" key="GridCell.Tab.0.right" timestamp="1582835018951">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.right/0.23.1920.979@0.23.1920.979" timestamp="1582834414289" />
+    <state width="1878" height="264" key="GridCell.Tab.0.right/0.23.1920.979@0.23.1920.979" timestamp="1582835018951" />
     <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1582667687824">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
@@ -237,10 +259,10 @@
       <screen x="0" y="23" width="1920" height="979" />
     </state>
     <state x="548" y="262" key="IDE.errors.dialog/0.23.1920.979@0.23.1920.979" timestamp="1582664700989" />
-    <state x="670" y="319" key="NewPhpClassDialog" timestamp="1582833457103">
+    <state x="670" y="319" key="NewPhpClassDialog" timestamp="1582836480513">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state x="670" y="319" key="NewPhpClassDialog/0.23.1920.979@0.23.1920.979" timestamp="1582833457103" />
+    <state x="670" y="319" key="NewPhpClassDialog/0.23.1920.979@0.23.1920.979" timestamp="1582836480513" />
     <state x="781" y="443" key="NewPhpFileDialog" timestamp="1582834275009">
       <screen x="0" y="23" width="1920" height="979" />
     </state>

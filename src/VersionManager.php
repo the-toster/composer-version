@@ -13,28 +13,31 @@ class VersionManager
         $this->storage = $storage;
     }
 
-    public function major(): void
+    public function major(): Version
     {
         $version = $this->getCurrent();
         $version->major();
         $this->storage->set($version);
+        return $version;
     }
 
-    public function minor(): void
+    public function minor(): Version
     {
         $version = $this->getCurrent();
         $version->minor();
         $this->storage->set($version);
+        return $version;
     }
 
-    public function patch(): void
+    public function patch(): Version
     {
         $version = $this->getCurrent();
         $version->patch();
         $this->storage->set($version);
+        return $version;
     }
 
-    public function has()
+    public function has(): bool
     {
         $this->assertStorageAccessible();
         return $this->storage->has();
