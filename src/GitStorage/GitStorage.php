@@ -6,21 +6,27 @@ use ComposerVersionPlugin\Version;
 
 class GitStorage implements StorageInterface
 {
+    private $shell;
+
+    public function __construct(ExecInterface $shell)
+    {
+        $this->shell = $shell;
+    }
+
 
     public function set(Version $version, string $annotation = null): void
     {
         $tag = $version->getString();
         $annotation = $annotation ?? "Version $tag";
-        passthru("git tag -a $tag -m $annotation");
-        //passthru("git push --tag");
+        $this->shell->exec("git tag -a $tag -m \"$annotation\"");
+        $this->shell->exec("git push --tag");
     }
 
     public function get(): ?string
     {
         $r = [];
-        $return_val = 0;
-        exec("git describe", $r, $return_val);
-        if($return_val === 0) {
+        $exit_code = $this->shell->exec("git describe", $r);
+        if($exit_code === 0) {
             return $r[0] ?? '';
         }
         return null;
@@ -34,7 +40,7 @@ class GitStorage implements StorageInterface
     public function isAccessible(): bool
     {
         $r = [];
-        exec("git rev-parse --is-inside-work-tree", $r, $return_val);
-        return $return_val === 0 && trim($r[0] ?? '') === 'true';
+        $exit_code = $this->shell->exec("git rev-parse --is-inside-work-tree", $r);
+        return $exit_code === 0 && trim($r[0] ?? '') === 'true';
     }
 }

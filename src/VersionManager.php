@@ -39,6 +39,7 @@ class VersionManager
         $this->assertStorageAccessible();
         return $this->storage->has();
     }
+
     public function getCurrent(): Version
     {
         $this->assertStorageAccessible();
