@@ -1,5 +1,5 @@
 {
-    "name": "user/composer-version",
+    "name": "the-toster/composer-version",
     "description": "Add npm-like version commands to composer",
     "type": "composer-plugin",
     "extra": {
