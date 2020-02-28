@@ -3,6 +3,7 @@ namespace ComposerVersionPlugin\GitStorage;
 
 use ComposerVersionPlugin\StorageInterface;
 use ComposerVersionPlugin\Version;
+use ComposerVersionPlugin\StorageWriteError;
 
 class GitStorage implements StorageInterface
 {
@@ -18,7 +19,10 @@ class GitStorage implements StorageInterface
     {
         $tag = $version->getString();
         $annotation = $annotation ?? "Version $tag";
-        $this->shell->exec("git tag -a $tag -m \"$annotation\"");
+        $returnCode = $this->shell->exec("git tag -a $tag -m \"$annotation\"");
+        if($returnCode !== 0) {
+            throw new StorageWriteError;
+        }
         $this->shell->exec("git push --tag");
     }
 

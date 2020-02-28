@@ -13,9 +13,21 @@ class VersionManager
         $this->storage = $storage;
     }
 
+    public function validateVersionString(string $s): bool
+    {
+        return preg_match("~^\d+\.\d+\.\d+$~", $s) === 1;
+    }
+
+    public function setNewVersion(string $s): Version
+    {
+        $version = $this->parseStringVersion($s);
+        $this->storage->set($version);
+        return $version;
+    }
+
     public function major(): Version
     {
-        $version = $this->getCurrent();
+        $version = $this->get();
         $version->major();
         $this->storage->set($version);
         return $version;
@@ -23,7 +35,7 @@ class VersionManager
 
     public function minor(): Version
     {
-        $version = $this->getCurrent();
+        $version = $this->get();
         $version->minor();
         $this->storage->set($version);
         return $version;
@@ -31,7 +43,7 @@ class VersionManager
 
     public function patch(): Version
     {
-        $version = $this->getCurrent();
+        $version = $this->get();
         $version->patch();
         $this->storage->set($version);
         return $version;
@@ -43,14 +55,14 @@ class VersionManager
         return $this->storage->has();
     }
 
-    public function getCurrent(): Version
+    public function get(): Version
     {
         $this->assertStorageAccessible();
         $string = $this->storage->get();
         return $this->parseStringVersion($string ?? '0.0.0');
     }
 
-    private function assertStorageAccessible()
+    private function assertStorageAccessible(): void
     {
         if (!$this->storage->isAccessible()) {
             throw new StorageInaccessible;
