@@ -11,12 +11,10 @@ use Composer\Plugin\Capable;
 
 class Plugin implements PluginInterface, Capable, CommandProvider
 {
-    private $composer, $io;
 
     public function activate(Composer $composer, IOInterface $io)
     {
-        $this->composer = $composer;
-        $this->io = $io;
+
     }
 
     public function getCapabilities()

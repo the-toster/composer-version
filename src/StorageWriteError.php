@@ -4,7 +4,9 @@
 namespace ComposerVersionPlugin;
 
 
-class StorageWriteError extends \RuntimeException
+use RuntimeException;
+
+class StorageWriteError extends RuntimeException
 {
 
 }

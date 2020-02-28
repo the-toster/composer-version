@@ -4,7 +4,9 @@
 namespace ComposerVersionPlugin;
 
 
-class StorageInaccessible extends \RuntimeException
+use RuntimeException;
+
+class StorageInaccessible extends RuntimeException
 {
 
 }
