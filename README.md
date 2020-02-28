@@ -1,4 +1,4 @@
-# composer-version
+# Composer version plugin
 Add NPM-like version commands to composer
 
 It uses git tags to store version information
