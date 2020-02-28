@@ -1,6 +1,9 @@
 {
     "name": "the-toster/composer-version",
-    "description": "Add npm-like version commands to composer",
+    "description": "Composer plugin that adds npm-like version commands (patch, minor, major) and use git tags to store versions",
+    "keywords": ["version","bump","npm-version","semver"],
+    "homepage": "https://github.com/the-toster/composer-version",
+    "license": "MIT",
     "type": "composer-plugin",
     "extra": {
         "class": "ComposerVersionPlugin\\Plugin\\Plugin"
