@@ -23,7 +23,6 @@ class GitStorage implements StorageInterface
         if($returnCode !== 0) {
             throw new StorageWriteError;
         }
-        $this->shell->exec("git push --tag");
     }
 
     public function get(): ?string
