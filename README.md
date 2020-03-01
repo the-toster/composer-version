@@ -18,3 +18,22 @@ $ composer version minor
 $ composer version major
 1.0.0
 ```
+
+## What it does
+
+
+```shell script
+composer version get 
+# parse `git describe` to get version numbers (major.minor.patch) from latest tag 
+
+composer version 1.0.1
+# creates new annotated tag: `git tag 1.0.1 -a "Version 1.0.1"`
+
+composer version minor
+# use `git describe` to extract current version, 
+# increments minor: 1.0.1 -> 1.1.0
+# creates new annotated tag 1.1.0
+
+# and so on
+```
+

@@ -11,7 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5030946-e42a-4f7b-8ddc-a6a0cdabe2f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +149,7 @@
       <workItem from="1582835798366" duration="2926000" />
       <workItem from="1582881782798" duration="14000" />
       <workItem from="1582918871220" duration="8107000" />
+      <workItem from="1583086836698" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1582663509411</created>
@@ -220,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582926898611</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="do not push automatically push tags">
+      <created>1583086965407</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583086965407</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +257,8 @@
     <MESSAGE value="set vendor name of package" />
     <MESSAGE value="add description to packagist" />
     <MESSAGE value="add installation instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add installation instructions" />
+    <MESSAGE value="do not push automatically push tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="do not push automatically push tags" />
   </component>
   <component name="WindowStateProjectService">
     <state x="548" y="175" key="#CLI_Interpreters" timestamp="1582666192727">
@@ -284,10 +293,10 @@
       <screen x="0" y="23" width="1920" height="979" />
     </state>
     <state x="719" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1920.979@0.23.1920.979" timestamp="1582925135454" />
-    <state x="515" y="104" key="CommitChangelistDialog2" timestamp="1582926898483">
+    <state x="515" y="104" key="CommitChangelistDialog2" timestamp="1583086965214">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
-    <state x="515" y="104" key="CommitChangelistDialog2/0.23.1920.979@0.23.1920.979" timestamp="1582926898483" />
+    <state x="515" y="104" key="CommitChangelistDialog2/0.23.1920.979@0.23.1920.979" timestamp="1583086965214" />
     <state x="722" y="432" key="ComposerInitDialogKey" timestamp="1582666528764">
       <screen x="0" y="23" width="1920" height="979" />
     </state>
