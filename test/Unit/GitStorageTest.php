@@ -18,7 +18,6 @@ class GitStorageTest extends TestCase
 
         $storage->set(new Version(1,1,3));
 
-        $this->assertEquals('git push --tag', $shell->popCommand());
         $this->assertEquals('git tag -a 1.1.3 -m "Version 1.1.3"', $shell->popCommand());
     }
 
