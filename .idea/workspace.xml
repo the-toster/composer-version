@@ -11,7 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5030946-e42a-4f7b-8ddc-a6a0cdabe2f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/composer-version.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/composer-version.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psalm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/psalm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GitStorage/GitStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GitStorage/GitStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plugin/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plugin/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plugin/Plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plugin/Plugin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,58 +39,63 @@
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
-      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
-      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
-      <path value="$PROJECT_DIR$/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/netresearch/jsonmapper" />
-      <path value="$PROJECT_DIR$/vendor/felixfbecker/language-server-protocol" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/webmozart/glob" />
-      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
-      <path value="$PROJECT_DIR$/vendor/openlss/lib-array2xml" />
-      <path value="$PROJECT_DIR$/vendor/felixfbecker/advanced-json-rpc" />
       <path value="$PROJECT_DIR$/vendor/amphp/byte-stream" />
       <path value="$PROJECT_DIR$/vendor/amphp/amp" />
-      <path value="$PROJECT_DIR$/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YJaU1mI8GP8HZgLgjQ0Zzd2JJT" />
@@ -94,17 +105,21 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHPUnit.VersionManagerTest.testValidateVersion">
     <configuration name="GitStorageTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -132,6 +147,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,6 +166,8 @@
       <workItem from="1582881782798" duration="14000" />
       <workItem from="1582918871220" duration="8107000" />
       <workItem from="1583086836698" duration="536000" />
+      <workItem from="1604412560290" duration="1348000" />
+      <workItem from="1604573407405" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1582663509411</created>
@@ -228,11 +246,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583086965407</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update composer version">
+      <created>1604573510693</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604573510693</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -258,112 +283,25 @@
     <MESSAGE value="add description to packagist" />
     <MESSAGE value="add installation instructions" />
     <MESSAGE value="do not push automatically push tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="do not push automatically push tags" />
+    <MESSAGE value="Update composer version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update composer version" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="548" y="175" key="#CLI_Interpreters" timestamp="1582666192727">
-      <screen x="0" y="23" width="1920" height="979" />
+    <state x="830" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1604573751700">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="548" y="175" key="#CLI_Interpreters/0.23.1920.979@0.23.1920.979" timestamp="1582666192727" />
-    <state x="636" y="98" key="#PHP" timestamp="1582664678667">
-      <screen x="0" y="23" width="1920" height="979" />
+    <state x="830" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/2560.9.2560.1400@0.0.2048.1112" timestamp="1604573751699" />
+    <state x="644" y="221" key="CommitChangelistDialog2" timestamp="1604573510004">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="636" y="98" key="#PHP/0.23.1920.979@0.23.1920.979" timestamp="1582664678667" />
-    <state x="548" y="174" key="#Test_Frameworks" timestamp="1582664733311">
-      <screen x="0" y="23" width="1920" height="979" />
+    <state x="644" y="221" key="CommitChangelistDialog2/0.0.2048.1112/2560.9.2560.1400@0.0.2048.1112" timestamp="1604573510004" />
+    <state x="93" y="93" width="1862" height="926" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604573820980">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="548" y="174" key="#Test_Frameworks/0.23.1920.979@0.23.1920.979" timestamp="1582664733311" />
-    <state x="619" y="142" width="725" height="741" key="#VersionManagerTest" timestamp="1582664686098">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="619" y="142" width="725" height="741" key="#VersionManagerTest/0.23.1920.979@0.23.1920.979" timestamp="1582664686098" />
-    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1582836004296">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="773" y="235" key="#com.intellij.ide.util.MemberChooser/0.23.1920.979@0.23.1920.979" timestamp="1582836004296" />
-    <state x="648" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582834976226">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="648" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.979@0.23.1920.979" timestamp="1582834976226" />
-    <state x="722" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582836366985">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="722" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.979@0.23.1920.979" timestamp="1582836366984" />
-    <state x="719" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582925135454">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="719" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1920.979@0.23.1920.979" timestamp="1582925135454" />
-    <state x="515" y="104" key="CommitChangelistDialog2" timestamp="1583086965214">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="515" y="104" key="CommitChangelistDialog2/0.23.1920.979@0.23.1920.979" timestamp="1583086965214" />
-    <state x="722" y="432" key="ComposerInitDialogKey" timestamp="1582666528764">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="722" y="432" key="ComposerInitDialogKey/0.23.1920.979@0.23.1920.979" timestamp="1582666528764" />
-    <state width="1878" height="264" key="GridCell.Tab.0.bottom" timestamp="1582927133020">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.bottom/0.23.1920.979@0.23.1920.979" timestamp="1582927133020" />
-    <state width="1878" height="264" key="GridCell.Tab.0.center" timestamp="1582927133020">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.center/0.23.1920.979@0.23.1920.979" timestamp="1582927133020" />
-    <state width="1878" height="264" key="GridCell.Tab.0.left" timestamp="1582927133019">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.left/0.23.1920.979@0.23.1920.979" timestamp="1582927133019" />
-    <state width="1878" height="264" key="GridCell.Tab.0.right" timestamp="1582927133020">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="264" key="GridCell.Tab.0.right/0.23.1920.979@0.23.1920.979" timestamp="1582927133020" />
-    <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1582667687824">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.bottom/0.23.1920.979@0.23.1920.979" timestamp="1582667687824" />
-    <state width="1878" height="326" key="GridCell.Tab.1.center" timestamp="1582667687823">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.center/0.23.1920.979@0.23.1920.979" timestamp="1582667687823" />
-    <state width="1878" height="326" key="GridCell.Tab.1.left" timestamp="1582667687823">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.left/0.23.1920.979@0.23.1920.979" timestamp="1582667687823" />
-    <state width="1878" height="326" key="GridCell.Tab.1.right" timestamp="1582667687824">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.right/0.23.1920.979@0.23.1920.979" timestamp="1582667687824" />
-    <state x="548" y="262" key="IDE.errors.dialog" timestamp="1582664700989">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="548" y="262" key="IDE.errors.dialog/0.23.1920.979@0.23.1920.979" timestamp="1582664700989" />
-    <state x="670" y="319" key="NewPhpClassDialog" timestamp="1582922117225">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="670" y="319" key="NewPhpClassDialog/0.23.1920.979@0.23.1920.979" timestamp="1582922117225" />
-    <state x="781" y="443" key="NewPhpFileDialog" timestamp="1582834275009">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="781" y="443" key="NewPhpFileDialog/0.23.1920.979@0.23.1920.979" timestamp="1582834275009" />
-    <state x="153" y="138" key="SettingsEditor" timestamp="1582924922992">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="153" y="138" key="SettingsEditor/0.23.1920.979@0.23.1920.979" timestamp="1582924922992" />
-    <state x="0" y="23" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1582665009950">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="0" y="23" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.23.1920.979@0.23.1920.979" timestamp="1582665009950" />
-    <state x="722" y="150" key="refactoring.ChangeSignatureDialog" timestamp="1582833670866">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="722" y="150" key="refactoring.ChangeSignatureDialog/0.23.1920.979@0.23.1920.979" timestamp="1582833670866" />
-    <state x="625" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1582922965241">
-      <screen x="0" y="23" width="1920" height="979" />
-    </state>
-    <state x="625" y="238" width="670" height="676" key="search.everywhere.popup/0.23.1920.979@0.23.1920.979" timestamp="1582922965241" />
+    <state x="93" y="93" width="1862" height="926" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2048.1112/2560.9.2560.1400@0.0.2048.1112" timestamp="1604573820980" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/composer_version@VersionManagerTest.xml" NAME="VersionManagerTest Coverage Results" MODIFIED="1582833362523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/composer_version@test.xml" NAME="test Coverage Results" MODIFIED="1582924016972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/composer_version@VersionManagerTest.xml" NAME="VersionManagerTest Coverage Results" MODIFIED="1582833362523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

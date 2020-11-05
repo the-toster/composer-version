@@ -17,7 +17,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 
 class Command extends BaseCommand
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName('version');
         $this->setDescription("Manage project version with git tags");
@@ -50,6 +50,7 @@ class Command extends BaseCommand
         $versionManager = new VersionManager(new GitStorage(new Shell()));
 
         if (in_array($action, ['major', 'minor', 'patch', 'get'])) {
+            /** @var Version $version */
             $version = call_user_func([$versionManager, $action]);
             return $this->outputVersion($version, $io);
         }

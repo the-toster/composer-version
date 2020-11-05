@@ -25,6 +25,10 @@ class GitStorage implements StorageInterface
         }
     }
 
+    /**
+     * @psalm-suppress MixedReturnStatement
+     * @psalm-suppress MixedInferredReturnType
+     */
     public function get(): ?string
     {
         $r = [];
@@ -44,6 +48,7 @@ class GitStorage implements StorageInterface
     {
         $r = [];
         $exit_code = $this->shell->exec("git rev-parse --is-inside-work-tree", $r);
+        /** @psalm-suppress MixedArgument */
         return $exit_code === 0 && trim($r[0] ?? '') === 'true';
     }
 }
