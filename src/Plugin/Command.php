@@ -5,12 +5,14 @@ namespace ComposerVersionPlugin\Plugin;
 
 use ComposerVersionPlugin\GitStorage\GitStorage;
 use ComposerVersionPlugin\GitStorage\Shell;
+use ComposerVersionPlugin\GitStorage\WorkingDirectoryNotClean;
 use ComposerVersionPlugin\StorageInaccessible;
 use ComposerVersionPlugin\StorageWriteError;
 use ComposerVersionPlugin\Version;
 use ComposerVersionPlugin\VersionManager;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Composer\Command\BaseCommand;
 use Symfony\Component\Console\Style\SymfonyStyle;
@@ -23,6 +25,7 @@ class Command extends BaseCommand
         $this->setDescription("Manage project version with git tags");
         $this->setHelp('Provides commands to increment version numbers or set version directly (Major.Minor.Patch format)');
         $this->addArgument('action', InputArgument::OPTIONAL, '[<newversion> | major | minor | patch | get]', 'get');
+        $this->addOption('no-push', null,InputOption::VALUE_NONE, 'Prevent `git push --tags`');
     }
 
 
@@ -34,8 +37,11 @@ class Command extends BaseCommand
          * @psalm-suppress PossiblyInvalidCast
          */
         $action = (string) $input->getArgument('action');
+        $noPush = (bool) $input->getOption('no-push');
         try {
-            return $this->performAction($action, $io);
+            return $this->performAction($action, $io, $noPush);
+        } catch (WorkingDirectoryNotClean $e) {
+            $io->error('Working directory is not clean, please commit your changes first');
         } catch (StorageInaccessible $e) {
             $io->error('No suitable git repository found, cant use git storage');
         } catch (StorageWriteError $e) {
@@ -45,9 +51,9 @@ class Command extends BaseCommand
         return 0;
     }
 
-    private function performAction(string $action, SymfonyStyle $io): int
+    private function performAction(string $action, SymfonyStyle $io, bool $noPush): int
     {
-        $versionManager = new VersionManager(new GitStorage(new Shell()));
+        $versionManager = new VersionManager(new GitStorage(new Shell(), $noPush));
 
         if (in_array($action, ['major', 'minor', 'patch', 'get'])) {
             $version = call_user_func([$versionManager, $action]);
