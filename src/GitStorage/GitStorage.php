@@ -57,8 +57,8 @@ class GitStorage implements StorageInterface
 
     private function pushTags(): void
     {
-
-        $this->shell->exec('git push --tags', []);
+        $r = [];
+        $this->shell->exec('git push --tags', $r);
     }
 
     private function assertWorkingDirectoryClean(): void
